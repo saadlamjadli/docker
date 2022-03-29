@@ -20,7 +20,7 @@ RUN apt-get update && \
     apt-get clean
     
 
-RUN R -e "install.packages(pkgs=c('shiny','tidyverse','shinydashboard', 'xgboost', 'DT', 'plotly', 'tidymodels', 'ggridges', 'tidytext'), repos='https://cran.rstudio.com/')" 
+RUN R -e "install.packages(pkgs=c('shiny','tidyverse','DT', 'data.table','RMySQL','randomForest'), repos='https://cran.rstudio.com/')" 
 
 RUN mkdir /root/app
 
